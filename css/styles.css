@@ -647,6 +647,9 @@ img {
     width: 100%;
     padding: 40px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .is-open {
@@ -767,6 +770,7 @@ img {
 
 .positi {
     position: relative;
+    width: 100%;
 }
 
 .name {
@@ -851,10 +855,64 @@ img {
 
 .accent {
     text-decoration: underline;
+    color: #4b5ae5;
 }
 
 .user-privacy:checked+.footer-true>.modal-titl {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
+}
+
+.subscribe {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+
+}
+
+.subscrib-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+
+
+}
+
+.subscrib-input::placeholder {
+    color: #ffffff;
+}
+
+.subscri {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+
 }
