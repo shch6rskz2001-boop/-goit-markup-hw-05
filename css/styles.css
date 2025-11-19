@@ -646,26 +646,31 @@ img {
     height: 100%;
     width: 100%;
     padding: 40px;
-
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrod.is-open {
+.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 
+
 }
 
 .position {
-    position: relative;
-    width: 517px;
-    height: 80%;
-    max-height: 784px;
+
+    padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
-    background-color: #fafafa;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     overflow: auto;
     padding: 72px;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    min-height: 584px;
+    background: #fcfcfc;
 }
 
 .back {
@@ -682,7 +687,7 @@ img {
     margin-bottom: 18px;
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 8px;
 
 }
 
@@ -709,9 +714,11 @@ img {
 }
 
 .close-popup:hover,
-.close-popup: focus {
-    background-color: #4040bbf;
-    fill: #fff
+.close-popup:focus {
+    border: none;
+    background-color: #404bbf;
+    border-color: #404bbf;
+    fill: #ffffff;
 }
 
 .close-popup-icon {
@@ -719,9 +726,6 @@ img {
 
 }
 
-.label-field {
-    display: block;
-}
 
 .label-field {
     font-size: 12px;
@@ -729,7 +733,7 @@ img {
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
-
+    display: block;
 
 }
 
@@ -757,6 +761,10 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.positi:focus-within>svg {
+    fill: #4d5ae5;
+}
+
 .positi {
     position: relative;
 }
@@ -770,4 +778,36 @@ img {
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.name:focus-within {
+    outline: #4d5ae5;
+    border-color: #4d5ae5;
+}
+
+.textarea {
+    margin-bottom: 16px
+}
+
+.text {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.text:focus {
+    border-color: #4D5AE5;
+
 }
