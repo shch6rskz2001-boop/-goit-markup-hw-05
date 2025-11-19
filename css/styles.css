@@ -855,7 +855,7 @@ img {
 
 .accent {
     text-decoration: underline;
-    color: #4b5ae5;
+    color: #4d5ae5;
 }
 
 .user-privacy:checked+.footer-true>.modal-titl {
@@ -897,6 +897,7 @@ img {
 
 .subscrib-input::placeholder {
     color: #ffffff;
+
 }
 
 .subscri {
@@ -915,4 +916,9 @@ img {
     border: none;
     border-radius: 4px;
 
+}
+
+.svgsubscribe {
+    margin-left: 16px;
+    fill: #f4f4fd;
 }
