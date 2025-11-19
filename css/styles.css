@@ -849,9 +849,11 @@ img {
 }
 
 
+.accent {
+    text-decoration: underline;
+}
 
-
-.user-privacy:checked+.checkbox-privacypolicy>.check-empty {
+.user-privacy:checked+.footer-true>.modal-titl {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
